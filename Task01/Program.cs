@@ -4,3 +4,17 @@
 // (последний множитель равен 1 для нечетного n и равен 2 для четного n).
 // Например, 6!! = 6 х 4 х 2 = 48 и 5!! = 5 х 3 х 1 = 15. Предложите версию метода без рекурсии и с рекурсией.
 
+static int doubleFact(int n){
+
+    if (n > 2) return n * doubleFact(n-2);
+    else if (n == 1) return 1;
+    return 2;
+}
+
+ static void show(int n){
+
+    Console.WriteLine($"{n}!! = " + doubleFact(n));
+ }
+
+show(6);
+show(5);
