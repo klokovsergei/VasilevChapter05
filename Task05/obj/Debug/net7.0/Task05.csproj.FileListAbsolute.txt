@@ -1,0 +1,15 @@
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/Task05.csproj.AssemblyReference.cache
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/Task05.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/Task05.AssemblyInfoInputs.cache
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/Task05.AssemblyInfo.cs
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/Task05.csproj.CoreCompileInputs.cache
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/bin/Debug/net7.0/Task05
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/bin/Debug/net7.0/Task05.deps.json
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/bin/Debug/net7.0/Task05.runtimeconfig.json
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/bin/Debug/net7.0/Task05.dll
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/bin/Debug/net7.0/Task05.pdb
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/Task05.dll
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/refint/Task05.dll
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/Task05.pdb
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/Task05.genruntimeconfig.cache
+/Users/sergejklokov/Documents/c_sharp/Vasilevs_book/Chapter_05/Task05/obj/Debug/net7.0/ref/Task05.dll
