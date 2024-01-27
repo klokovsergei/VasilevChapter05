@@ -6,59 +6,68 @@
 // последний символы определяются аргументами метода. Например, если передать аргументами методу символы
 // ' В ' и ' D ' , то в результате получим мас­сив из символов 'В', 'С' и 'D'.
 
-static char[] CreatArr(char firstChar, char secondChar)
+class WorkWithArr
 {
-    if ((int)firstChar > (int)secondChar)
+    public static char[] CreatArr(char firstChar, char secondChar)
     {
-        Console.WriteLine("Вы ошиблись последовательность цифр, поэтому я поменял их местами.");
-        char temp = firstChar;
-        firstChar = secondChar;
-        secondChar = temp;
+        if ((int)firstChar > (int)secondChar)
+        {
+            Console.WriteLine("Вы ошиблись последовательность цифр, поэтому я поменял их местами.");
+            char temp = firstChar;
+            firstChar = secondChar;
+            secondChar = temp;
+        }
+        int sizeArr = (int)secondChar - (int)firstChar + 1;
+        char[] nums = new char[sizeArr];
+        for (int i = 0; i < sizeArr; i++, firstChar++) nums[i] = firstChar;
+        return nums;
     }
-    int sizeArr = (int)secondChar - (int)firstChar + 1;
-    char[] nums = new char[sizeArr];
-    for (int i = 0; i < sizeArr; i++, firstChar++) nums[i] = firstChar;
-    return nums;
-}
 
-static int[] CreatArr(int firstNumber, int secondNumber)
-{
-    if (firstNumber > secondNumber)
+    public static int[] CreatArr(int firstNumber, int secondNumber)
     {
-        Console.WriteLine("Вы ошиблись последовательность цифр, поэтому я поменял их местами.");
-        int temp = firstNumber;
-        firstNumber = secondNumber;
-        secondNumber = temp;
+        if (firstNumber > secondNumber)
+        {
+            Console.WriteLine("Вы ошиблись последовательность цифр, поэтому я поменял их местами.");
+            int temp = firstNumber;
+            firstNumber = secondNumber;
+            secondNumber = temp;
+        }
+        int sizeArr = secondNumber - firstNumber + 1;
+        int[] nums = new int[sizeArr];
+        for (int i = 0; i < sizeArr; i++, firstNumber++) nums[i] = firstNumber;
+        return nums;
     }
-    int sizeArr = secondNumber - firstNumber + 1;
-    int[] nums = new int[sizeArr];
-    for (int i = 0; i < sizeArr; i++, firstNumber++) nums[i] = firstNumber;
-    return nums;
+
+    public static void ShowArr(int[] nums)
+    {
+        Console.WriteLine($"Массив выглядит: [ {string.Join(", ", nums)} ]");
+    }
+
+    public static void ShowArr(char[] nums)
+    {
+        //Console.WriteLine($"Массив выглядит: [ {string.Join(", ", nums)} ]");
+        Console.WriteLine(nums);
+    }
 }
 
-static void ShowArr(int[] nums)
+class Program
 {
-    Console.WriteLine($"Массив выглядит: [ {string.Join(", ", nums)} ]");
+    static void Main()
+    {
+        int firstNumber_ = new Random().Next(0,11);
+        int secondNumber_ = new Random().Next(0,11);
+        int[] numbers = WorkWithArr.CreatArr(firstNumber_, secondNumber_);
+        WorkWithArr.ShowArr(numbers);
+
+        // firstNumber_ = new Random().Next((int)'А',(int)'я');
+        // secondNumber_ = new Random().Next((int)'А',(int)'я');
+
+        // char firstChar = (char)firstNumber;
+        // char secondChar = (char)secondNumber;
+        char firstChar_ = 'A';
+        char secondChar_ = 'k';
+        char[] chars = WorkWithArr.CreatArr(firstChar_, secondChar_);
+        WorkWithArr.ShowArr(chars);
+    }
+
 }
-
-static void ShowArr(char[] nums)
-{
-    //Console.WriteLine($"Массив выглядит: [ {string.Join(", ", nums)} ]");
-    Console.WriteLine(nums);
-}
-
-int firstNumber_ = new Random().Next(0,11);
-int secondNumber_ = new Random().Next(0,11);
-int[] numbers = CreatArr(firstNumber_, secondNumber_);
-ShowArr(numbers);
-
-// firstNumber_ = new Random().Next((int)'А',(int)'я');
-// secondNumber_ = new Random().Next((int)'А',(int)'я');
-
-// char firstChar = (char)firstNumber;
-// char secondChar = (char)secondNumber;
-char firstChar_ = 'A';
-char secondChar_ = 'k';
-char[] chars = CreatArr(firstChar_, secondChar_);
-ShowArr(chars);
-
