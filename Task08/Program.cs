@@ -21,7 +21,7 @@ static char[] CreatArr(char firstChar, char secondChar)
     return nums;
 }
 
-static int[] CreatArr1(int firstNumber, int secondNumber)
+static int[] CreatArr(int firstNumber, int secondNumber)
 {
     if (firstNumber > secondNumber)
     {
@@ -43,20 +43,22 @@ static void ShowArr(int[] nums)
 
 static void ShowArr(char[] nums)
 {
-    Console.WriteLine($"Массив выглядит: [ {string.Join(", ", nums)} ]");
+    //Console.WriteLine($"Массив выглядит: [ {string.Join(", ", nums)} ]");
+    Console.WriteLine(nums);
 }
 
-int firstNumber = new Random().Next(0,11);
-int secondNumber = new Random().Next(0,11);
-ShowArr(CreatArr((int)firstNumber, (int)secondNumber));
+int firstNumber_ = new Random().Next(0,11);
+int secondNumber_ = new Random().Next(0,11);
+int[] numbers = CreatArr(firstNumber_, secondNumber_);
+ShowArr(numbers);
 
-firstNumber = new Random().Next((int)'А',(int)'я');
-secondNumber = new Random().Next((int)'А',(int)'я');
+// firstNumber_ = new Random().Next((int)'А',(int)'я');
+// secondNumber_ = new Random().Next((int)'А',(int)'я');
 
-char firstChar = (char)firstNumber;
-char secondChar = (char)secondNumber;
-char firstChar = 'A';
-char secondChar = 'k';
-char[] chars = CreatArr((char)firstChar, (char)secondChar);
+// char firstChar = (char)firstNumber;
+// char secondChar = (char)secondNumber;
+char firstChar_ = 'A';
+char secondChar_ = 'k';
+char[] chars = CreatArr(firstChar_, secondChar_);
 ShowArr(chars);
 
